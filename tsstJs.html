@@ -11,16 +11,17 @@
 </body>
 
 <script type="text/javascript">
-$(".box").data("x","1");
-console.log($(".box").data("x"));
+var arr=[1.2120,2.13658,2.25889,9.21456];
+var b = arr.map(function(n){
+ 	return n.toFixed(2);
+ });
 
-jquery.ajax(){
-	type:"GET",
-	url:"",
-	data:,
-	dataType:,
-	success:''
-}
+
+ console.log(b);
+ console.log(typeof b[0]);
+
+ console.log(arr);
+  console.log(typeof arr[0]);
 
 </script>
 </html>
