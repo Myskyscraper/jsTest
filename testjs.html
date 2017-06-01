@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>这是测试</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.boa{
+			width: 600px;
+			height: 500px;
+			border: 1px solid red;
+		}
+		.box{
+				width: 100px;
+				height: 100px;
+				margin: 0 auto;
+				border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+	<div class="boa">
+		<div class="box"></div>
+	</div>
+</body>
+<script type="text/javascript">
+//面试题的：http://web.jobbole.com/82251/
+
+//https://github.com/mqyqingfeng/Blog
+//----------------------1原型和原型链-----------------------------
+
+// 	function Person() {
+
+// }
+// 	Person.prototype.name = 'Kevin';
+// 	var person1 = new Person();
+// 	var person2 = new Person();
+// console.log(person1) 
+// console.log(person1.name) // Kevin
+// console.log(person2.name) // Kevin
+
+//----------------------2作用域-------------------------------------
+	// var value = 1;
+	// function foo(){
+	// 	console.log(value);
+	// }
+
+	// function bar(){
+	// 	var value = 2;
+	// 	foo();
+	// }
+
+	// bar();//1
+
+//----------------------3执行上下文栈-------------------------------------
+
+	// function foo() {
+		
+	// 	console.log('foo1');
+		
+	// }
+
+	// foo();  // foo2
+
+	// function foo() {
+
+	// 	console.log('foo2');
+
+	// }
+
+	// foo(); // foo2
+
+//----------------------深入理解变量对象-------------------------------------
+
+// 变量对象(Variable object，VO)
+// 作用域链(Scope chain)
+// this
+
+	// function foo() {
+	//     console.log(a);
+	//     a = 1;
+	// }
+
+	// foo(); // ???
+
+	// function bar() {
+	//     a = 1;
+	//     console.log(a);
+	// }
+	// bar(); // ???
+//----------------------javaScript深入之作用域链-------------------------------------
+
+//----------------------JavaScript深入之闭包-------------------------------------
+//https://github.com/mqyqingfeng/Blog/issues/9
+//http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
+//闭包在一个函数内包含另一个人函数，通过访问另一个函数来实现的
+
+	// var data = [];
+	// for (var i = 0; i < 3; i++) {
+	// 	data[i] = function () {
+	// 		console.log(i);
+	// 	};
+	// }
+
+	// data[0]();
+	// data[1]();
+	// data[2]();
+
+
+
+// 　  var name = "The Window";
+// 　　var object = {
+// 　　　　name : "My Object",
+// 　　　　getNameFunc : function(){
+// 　　　　　　return function(){
+// 　　　　　　　　return this.name;
+// 　　　　　　};
+// 　　　　}
+// 　　};
+// 　　alert(object.getNameFunc()());
+
+
+// 　　var name = "The Window";
+// 　　var object = {
+// 　　　　name : "My Object",
+// 　　　　getNameFunc : function(){
+// 　　　　　　var that = this;
+// 　　　　　　return function(){
+// 　　　　　　　　return that.name;
+// 　　　　　　};
+// 　　　　}
+// 　　};
+// 　　alert(object.getNameFunc()());
+
+
+// var a = 10;
+// var b = {};
+
+// b.pro = 10;
+// console.log(typeof a);
+
+// console.log(b.pro+a);
+ 
+// var s = 'hello';
+// s.pro = 'world';
+// console.log(s.pro + s);
+
+
+
+</script>
+</html>
