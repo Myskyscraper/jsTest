@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>随机产生数组</title>
+</head>
+<body>
+
+
+</body>
+	<script type="text/javascript">
+
+		// function randArray(data){
+	 //    	//获取数组长度
+	 //    	var arrlen = data.length;
+	 //    	//创建数组 存放下标数
+	 //    	var try1 = new Array();
+	 //    	for(var i = 0;i < arrlen; i++){
+	 //    		try1[i] = i;
+	 //    	}
+	 //    	//创建数组 生成随机下标数
+	 //    	var try2 = new Array();
+	 //    	for(var i = 0;i < arrlen; i++){
+	 //    		try2[i] = try1.splice(Math.floor(Math.random() * try1.length),1);
+	 //    	}
+	 //    	//创建数组，生成对应随机下标数的数组
+	 //    	var try3 = new Array();
+	 //    	for(var i = 0; i < arrlen; i++){
+	 //    		try3[i] = data[try2[i]];
+	 //    	}
+	 //    	return try3;
+	 //    }
+
+	 //    var arr = [1,2,3,4,5];
+	 //    console.log(randArray(arr))
+
+	 	
+	 	var arr = [1,2,3,4,5,6,7,8,9,10];
+	    var b = arr.sort(function(a,b){ return Math.random()>.5 ? -1 : 1;});
+	    console.log(b);
+
+	</script>
+
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+
+	 setInterval(function () { getCountdown(); }, 1000);
+
+	 function getCountdown(){
+
+		var date = new Date();
+	 	var sec = pad(date.getSeconds());
+		var hour=pad(date.getHours()); //获取系统时
+		var minute =pad( date.getMinutes()); //分
+		console.log(hour+":"+minute+":"+sec);
+	}
+
+	function pad(n) {
+		return (n < 10 ? '0' : '') + n;
+	}
+
+</script>
+</body>
+</html>

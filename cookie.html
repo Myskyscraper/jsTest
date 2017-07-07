@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>cookie设置和消除</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+	<div class="look">我的这是查询的东西的</div>
+	<button id="btn">点击存cookie</button>
+	
+
+	<script type="text/javascript">
+
+	$.cookie('the_cookie', '888'); 
+	// var key = 'grade';
+
+	// var value = 5;
+
+	// 	// $('btn').on('click',setCookie(key,value,5));
+
+	// 	$('btn').click(setCookie(key,value,5))
+
+	// 	function getCookie(c_name)
+	// 	{
+	// 		if (document.cookie.length>0)
+	// 		{
+	// 			c_start=document.cookie.indexOf(c_name + "=")
+	// 			if (c_start!=-1)
+	// 			{ 
+	// 				c_start=c_start + c_name.length+1 
+	// 				c_end=document.cookie.indexOf(";",c_start)
+	// 				if (c_end==-1) c_end=document.cookie.length
+	// 					return unescape(document.cookie.substring(c_start,c_end))
+	// 			} 
+	// 		}
+	// 		return ""
+	// 	}
+
+	// 	function setCookie(c_name,value,expiredays)
+	// 	{
+	// 		console.log("a");
+	// 		var exdate=new Date()
+	// 		exdate.setDate(exdate.getDate()+expiredays)
+	// 		document.cookie=c_name+ "=" +escape(value)+
+	// 		((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+	// 	}
+
+
+	// 	function checkCookie()
+	// 	{
+	// 		username=getCookie('username')
+	// 		if (username!=null && username!="")
+	// 			{alert('Welcome again '+username+'!')}
+	// 		else 
+	// 		{
+	// 			username=prompt('Please enter your name:',"")
+	// 			if (username!=null && username!="")
+	// 			{
+	// 				setCookie('username',username,365)
+	// 			}
+	// 		}
+	// 	}
+	</script>
+
+</body>
+</html>
